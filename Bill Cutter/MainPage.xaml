@@ -58,7 +58,8 @@
               RowDefinitions="*,*,*,*">
             <Label Text="Enter your Bill: $"
                    TextColor="{StaticResource LightFont}"
-                   VerticalOptions="Center"/>
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
             <Entry BackgroundColor="{StaticResource SectionColor}"
                    x:Name="txtBill"
                    Grid.Column="1"
@@ -71,7 +72,8 @@
             <Label Grid.Row="1"
                    TextColor="{StaticResource LightFont}"
                    Text="Choose your tip"
-                   VerticalOptions="Center"/>
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
             <HorizontalStackLayout Grid.Row="1"
                                    Grid.Column="1"
                                    HeightRequest="70"
@@ -85,7 +87,8 @@
                    Text="Tip 0%"
                    TextColor="{StaticResource LightFont}"
                    Grid.Row="2"
-                   VerticalOptions="Center"/>
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
             <Slider Grid.Row="2"
                     Grid.Column="1"
                     Maximum="50"
@@ -95,10 +98,11 @@
             <Label Text="Split The total"
                    TextColor="{StaticResource LightFont}"
                    Grid.Row="3"
-                   VerticalOptions="Center"/>
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
             <HorizontalStackLayout Grid.Row="3"
                                    Grid.Column="1"
-                                   HorizontalOptions="Center"
+                                   HorizontalOptions="CenterAndExpand"
                                    VerticalOptions="Center">
                 <Button x:Name="btnMinus"
                         Text="-"
